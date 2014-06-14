@@ -21,6 +21,7 @@
 
 App::uses('Controller', 'Controller');
 App::uses('EnvironmentUtility', 'EnvironmentManager.Lib');
+App::uses('Notification', 'NotificationManager.Model');
 
 /**
  * Application Controller

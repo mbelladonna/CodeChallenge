@@ -7,10 +7,15 @@
         {
             "url": "https://github.com/asugai/CakePHP-Environment-Manager.git",
             "type": "vcs"
+        },
+        {
+            "url": "https://github.com/asugai/CakePHP-Notification-Manager.git",
+            "type": "vcs"
         }
     ],
     "require": {
         "cakephp/debug_kit" : "2.2.*",
-        "asugai/cake-php-environment-manager" : "dev-master"
+        "asugai/cake-php-environment-manager" : "dev-master",
+        "asugai/cake-php-notification-manager" : "dev-master"
     }
 }

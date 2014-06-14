@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2544fdff9bec5e71783b87c19878abc8",
+    "hash": "becb207836462e0eaf08dfdea87a737a",
     "packages": [
         {
             "name": "asugai/cake-php-environment-manager",
@@ -46,6 +46,56 @@
                 "issues": "https://github.com/asugai/CakePHP-Environment-Manager/issues"
             },
             "time": "2014-04-07 13:41:53"
+        },
+        {
+            "name": "asugai/cake-php-notification-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asugai/CakePHP-Notification-Manager.git",
+                "reference": "ab29d8a8a107ca29a41221224c0c6166c7daa2b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asugai/CakePHP-Notification-Manager/zipball/ab29d8a8a107ca29a41221224c0c6166c7daa2b2",
+                "reference": "ab29d8a8a107ca29a41221224c0c6166c7daa2b2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "twilio/sdk": ">=3.10.0",
+                "urbanairship/urbanairship": ">=0.1.3"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "NotificationManager"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Sugai",
+                    "email": "andre@orainteractive.com"
+                }
+            ],
+            "description": "MySQL and CRON based notification manager for CakePHP.",
+            "homepage": "http://github.com/asugai/cake-php-notification-manager",
+            "keywords": [
+                "api",
+                "cakephp",
+                "email",
+                "notifications",
+                "push",
+                "sms",
+                "twilio",
+                "urban airship"
+            ],
+            "support": {
+                "source": "https://github.com/asugai/CakePHP-Notification-Manager/tree/master",
+                "issues": "https://github.com/asugai/CakePHP-Notification-Manager/issues"
+            },
+            "time": "2014-04-21 20:33:30"
         },
         {
             "name": "cakephp/debug_kit",
@@ -179,6 +229,254 @@
                 "zikula"
             ],
             "time": "2014-04-09 16:12:43"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "583618d5cd2115a52101694aca87afb182b3e567"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/583618d5cd2115a52101694aca87afb182b3e567",
+                "reference": "583618d5cd2115a52101694aca87afb182b3e567",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "doctrine/couchdb": "dev-master",
+                "mlehner/gelf-php": "1.0.*",
+                "raven/raven": "0.3.*"
+            },
+            "suggest": {
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Monolog": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2013-04-23 10:09:48"
+        },
+        {
+            "name": "nategood/httpful",
+            "version": "0.2.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "e923b8e3903bc81e9300a386fff1074364fb3bc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/e923b8e3903bc81e9300a386fff1074364fb3bc1",
+                "reference": "e923b8e3903bc81e9300a386fff1074364fb3bc1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "time": "2014-05-21 10:58:38"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "twilio/sdk",
+            "version": "3.12.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "510fad9a9be2d7b68df7b5ff443711cbbf873068"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/510fad9a9be2d7b68df7b5ff443711cbbf873068",
+                "reference": "510fad9a9be2d7b68df7b5ff443711cbbf873068",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.7.2",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Services_Twilio": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Burke",
+                    "email": "kevin@twilio.com"
+                },
+                {
+                    "name": "Kyle Conroy",
+                    "email": "kyle+pear@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "time": "2014-01-30 15:53:31"
+        },
+        {
+            "name": "urbanairship/urbanairship",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/urbanairship/php-library2.git",
+                "reference": "7c5ce061c10d528d90a70e843b34ce99cd04a98a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/urbanairship/php-library2/zipball/7c5ce061c10d528d90a70e843b34ce99cd04a98a",
+                "reference": "7c5ce061c10d528d90a70e843b34ce99cd04a98a",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "1.5.0",
+                "nategood/httpful": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "UrbanAirship": "src/"
+                },
+                "files": [
+                    "src/UrbanAirship/Push/Audience.php",
+                    "src/UrbanAirship/Push/Notification.php",
+                    "src/UrbanAirship/Push/Schedule.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Urban Airship",
+                    "email": "support@urbanairship.com",
+                    "homepage": "http://support.urbanairship.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Urban Airship PHP Library",
+            "homepage": "http://docs.urbanairship.com/reference/libraries/php/",
+            "time": "2013-09-24 17:12:56"
         }
     ],
     "packages-dev": [
@@ -189,7 +487,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "asugai/cake-php-environment-manager": 20
+        "asugai/cake-php-environment-manager": 20,
+        "asugai/cake-php-notification-manager": 20
     },
     "platform": [
 
