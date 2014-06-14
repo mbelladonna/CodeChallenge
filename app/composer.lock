@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "becb207836462e0eaf08dfdea87a737a",
+    "hash": "b60a661841dd3de2cecedc7de259c12c",
     "packages": [
         {
             "name": "asugai/cake-php-environment-manager",
@@ -96,6 +96,55 @@
                 "issues": "https://github.com/asugai/CakePHP-Notification-Manager/issues"
             },
             "time": "2014-04-21 20:33:30"
+        },
+        {
+            "name": "asugai/cake-php-payment-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asugai/CakePHP-Payment-Manager.git",
+                "reference": "f4aab4a34e947a7bbd977eb3b4745321d82e3b74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asugai/CakePHP-Payment-Manager/zipball/f4aab4a34e947a7bbd977eb3b4745321d82e3b74",
+                "reference": "f4aab4a34e947a7bbd977eb3b4745321d82e3b74",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "stripe/stripe-php": ">=1.8.3"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "PaymentManager"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Sugai",
+                    "email": "andre@orainteractive.com"
+                }
+            ],
+            "description": "A stripe.com-based payment manager for CakePHP",
+            "homepage": "http://github.com/asugai/cake-php-payment-manager",
+            "keywords": [
+                "api",
+                "cakephp",
+                "email",
+                "payments",
+                "push",
+                "sms",
+                "twilio",
+                "urban airship"
+            ],
+            "support": {
+                "source": "https://github.com/asugai/CakePHP-Payment-Manager/tree/master",
+                "issues": "https://github.com/asugai/CakePHP-Payment-Manager/issues"
+            },
+            "time": "2014-04-21 20:31:49"
         },
         {
             "name": "cakephp/debug_kit",
@@ -381,6 +430,54 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "stripe/stripe-php",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "dc9a5c7d6408ae73085b19ab4386ee33f2b84602"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/dc9a5c7d6408ae73085b19ab4386ee33f2b84602",
+                "reference": "dc9a5c7d6408ae73085b19ab4386ee33f2b84602",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Stripe/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2014-05-28 23:15:23"
+        },
+        {
             "name": "twilio/sdk",
             "version": "3.12.4",
             "source": {
@@ -488,7 +585,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "asugai/cake-php-environment-manager": 20,
-        "asugai/cake-php-notification-manager": 20
+        "asugai/cake-php-notification-manager": 20,
+        "asugai/cake-php-payment-manager": 20
     },
     "platform": [
 

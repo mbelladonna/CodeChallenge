@@ -119,6 +119,18 @@ spl_autoload_unregister(array('App', 'load'));
 spl_autoload_register(array('App', 'load'), true, true);
 
 /**
+ * Load Plugins
+ */
+CakePlugin::loadAll([
+    'NotificationManager' => [
+        'bootstrap' => true
+    ],
+    'PaymentManager' => [
+        'bootstrap' => true
+    ]
+]);
+
+/**
  * CakePHP Environment Manager Plugin setup
  */
 Configure::write('EnvironmentUtility.environments', [
@@ -141,10 +153,17 @@ Configure::write('EnvironmentUtility.environments', [
 ]);
 
 /**
- * Load Plugins
+ * CakePHP Payment Manager Plugin setup
  */
-CakePlugin::loadAll([
-    'NotificationManager' => [
-        'bootstrap' => true
-    ]
-]);
+Configure::write('Stripe.test.secret', 'sk_test_H9dntzRRTE95zeY4pVWMEde7');
+Configure::write('Stripe.test.public', 'pk_test_l6ZETNHbG5qpvXxmlPL3dQpo');
+
+Configure::write('Stripe.live.secret', 'sk_live_F36KOCOoVxVnVnAI0EPikAyz');
+Configure::write('Stripe.live.public', 'pk_live_y6zHsJQqfUdpSZggdsoNq9FA');
+
+App::uses('EnvironmentUtility', 'EnvironmentManager.Lib');
+if (class_exists('EnvironmentUtility') && EnvironmentUtility::is('production')) {
+    Configure::write('Stripe.keys', Configure::read('Stripe.live'));
+} else {
+    Configure::write('Stripe.keys', Configure::read('Stripe.test'));
+}
