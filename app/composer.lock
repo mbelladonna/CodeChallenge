@@ -3,8 +3,50 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "158184c16754f1dcd1f10f31da96a204",
+    "hash": "2544fdff9bec5e71783b87c19878abc8",
     "packages": [
+        {
+            "name": "asugai/cake-php-environment-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asugai/CakePHP-Environment-Manager.git",
+                "reference": "940a9c75b6f85e85ff08717b88ef7a1bf56959a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asugai/CakePHP-Environment-Manager/zipball/940a9c75b6f85e85ff08717b88ef7a1bf56959a6",
+                "reference": "940a9c75b6f85e85ff08717b88ef7a1bf56959a6",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "EnvironmentManager"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Sugai",
+                    "email": "andre@orainteractive.com"
+                }
+            ],
+            "description": "A configurable environment manager for CakePHP.",
+            "homepage": "http://github.com/asugai/cake-php-environment-manager",
+            "keywords": [
+                "cakephp",
+                "environments"
+            ],
+            "support": {
+                "source": "https://github.com/asugai/CakePHP-Environment-Manager/tree/master",
+                "issues": "https://github.com/asugai/CakePHP-Environment-Manager/issues"
+            },
+            "time": "2014-04-07 13:41:53"
+        },
         {
             "name": "cakephp/debug_kit",
             "version": "2.2.3",
@@ -146,9 +188,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "asugai/cake-php-environment-manager": 20
+    },
     "platform": [
 
     ],

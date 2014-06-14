@@ -20,6 +20,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('EnvironmentUtility', 'EnvironmentManager.Lib');
 
 /**
  * Application Controller

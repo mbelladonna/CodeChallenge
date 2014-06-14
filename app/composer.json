@@ -3,7 +3,14 @@
     "config": {
         "vendor-dir": "Vendor"
     },
+    "repositories": [
+        {
+            "url": "https://github.com/asugai/CakePHP-Environment-Manager.git",
+            "type": "vcs"
+        }
+    ],
     "require": {
-        "cakephp/debug_kit" : "2.2.*"
+        "cakephp/debug_kit" : "2.2.*",
+        "asugai/cake-php-environment-manager" : "dev-master"
     }
 }

@@ -106,4 +106,29 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-CakePlugin::load('DebugKit');
+/**
+ * CakePHP Environment Manager Plugin setup
+ */
+Configure::write('EnvironmentUtility.environments', [
+    'production' => [
+        'urls' => [
+            'www.coding-challenge.com'
+        ],
+        'paths' => [
+            '/var/www/coding-challenge/'
+        ]
+    ],
+    'local' => [
+        'urls' => [
+            'ora-test'
+        ],
+        'paths' => [
+            '/home/mariano/Projects/BairesDev/Ora-interactive/coding-challenge/source'
+        ]
+    ]
+]);
+
+/**
+ * Load Plugins
+ */
+CakePlugin::loadAll();
