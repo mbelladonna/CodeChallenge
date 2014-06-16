@@ -33,5 +33,17 @@ App::uses('Notification', 'NotificationManager.Model');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    public $components = array('DebugKit.Toolbar');
+
+    public $components = array('DebugKit.Toolbar', 'Session');
+ 
+    /**
+     * Default titles for layout and header, can be overriden in chlidren's acitons     
+     */
+    var $title_for_layout = 'Code Challenge: Registration with Credit Card';    
+
+    public function beforeRender() {
+        parent::beforeRender();
+        $this->set('title_for_layout', $this->title_for_layout);        
+    }
+
 }

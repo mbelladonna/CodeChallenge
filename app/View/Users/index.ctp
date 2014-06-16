@@ -1,0 +1,1 @@
+<?php echo $this->Html->link('Register User', array('controller' => 'users', 'action' => 'add')); ?>
